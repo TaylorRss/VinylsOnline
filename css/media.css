@@ -1,0 +1,198 @@
+@media only screen and (max-width: 1000px) { 
+
+    .row {
+        max-width: 800px;
+        flex-wrap: wrap;   
+    }
+
+    /* NAVIGATION */
+    nav a {
+        font-size: 1.3rem;
+        margin: 1.5rem;
+    }
+
+    /* TRENDING Albums used for Latest, Index etc */
+
+    .trending-albums .row {
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .trending-item img {
+        height: 150px;
+        width: auto;
+        margin: auto;
+    }
+
+    .trending-item h3 {
+        font-size: 1rem;
+    }
+    .trending-item p {
+        font-size: 1.2rem;
+    }
+
+    /* Instagram Showcase */
+
+    .showcase__container {
+        flex-wrap: wrap;
+    }
+
+    .instagram-showcase img {
+        height: 200px;
+        width: 125px;
+    }
+
+    /* Opening Info, Sell, Latest Page etc.
+    /* Splits */
+    .split {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .opening-text {
+        font-size: 1rem;
+        margin: auto 10px;
+    }
+
+    .opening-image {
+        width: 500px;
+        height: auto;
+    }
+
+    /* LOGIN Page */
+    .login-form {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .login-image {
+        height: 500px;
+        width: 500px;
+    }
+
+    /* Sell Info Page */
+
+    .sell-info {
+        flex-direction: column;
+    }
+
+    .sell-image {
+        height: 200px;
+        width: auto;
+    }
+
+    .sell-item {
+        margin: 10px 0;
+    }
+
+    /* Selected Image Page */
+
+    .selected-album {
+        flex-direction: column;
+        max-width: 1000px;
+    }
+
+    .album-cover {
+        height: 500px;
+    }
+
+    .album-text {
+        width: auto;
+    }
+
+    .recommend__container {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .recommend__container img {
+        height: 200px;
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 680px) {
+
+    /* Titles on all pages changes size so that it becomes more readable/symmetrical */
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Album Display for Index, Latest, Albums etc */
+
+    /* Instagram Showcase */
+    .showcase__container .row {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .latest-intro {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .latest-intro h2 {
+        font-size: 2.3rem;
+    }
+
+    .latest-image {
+        height: 150px;
+        width: auto;
+    }
+    /* Opening Section */
+    .opening-image {
+        width: 350px;
+        height: auto;
+        margin: auto;
+    }
+
+    /* LOGIN/REGISTER Page */
+
+    .login-image {
+        display: none;
+    }
+
+    /* Showcase Container  */
+
+    .showcase__container {
+        flex-direction: column;
+    }
+
+    /* Selected Page */
+    .selected-album {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .album-text {
+        width: 450px;
+    }
+
+    .album-title,
+    .album-artist, 
+    .album-text, 
+    .album-price, 
+    .album-genre, 
+    .album-cat,
+    .album-button {
+        margin-left: 10px;
+    }
+
+    .album-recommend {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    /* Footers */
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    .footer-container h3 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,689 @@
+/*
+COLOURS
+
+#FFF
+#7EA8BE - Pawter Blue
+#333 - Dark Grey
+#
+*/
+
+/* Nav Links */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500&display=swap');
+
+/* Main Hero */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+/* Product Info */
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+/* H1 */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap');
+/* H2,  */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+/* H3,  */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+/* Paragrphs */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-weight: 400;
+    font-size: 62.5%; /* This defines a REM */
+    line-height: 1.7;
+    color: #333;
+    background-color: #F2F2F2;
+    text-rendering: optimizeLegibility;
+}
+
+/* -------------------------------Resuable ---------------------------- */
+
+.row {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+section {
+    padding: 50px 0;
+}
+
+
+/* ----------------- HEADINGS ------------------ */
+h1,
+h2,
+h3,
+h4 {
+
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #FFF;
+
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+
+/* Section Headers */
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Outfit', sans-serif;
+    word-spacing: 1px;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    color: #555;
+    font-weight: 600;
+
+}
+
+
+/* Product Info */
+h3 {
+    font-size: 3rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 2rem 0;
+    font-weight: 700;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 5px;
+  
+}
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+  
+
+
+
+/* //////////////////// NAVIGATION ///////////////////// */
+
+
+
+/* Main Nav */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Adds Padding to Side of Navigation Links to prevent Clutter */
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    /*  */
+}
+
+/* NavBar after the User scrolls down the Page using JS/JQuery*/
+.navbar-alt {
+        background-color: #776472;
+        transition: 0.2s;
+        border-bottom: #ccc 1px solid;
+      }
+.navbar-alt a, .logo {
+        color: #fff;
+    }
+
+
+.sign-up-alt {
+    background-color: #333;
+    color: #FFF!important;
+}
+
+/*When the Page scrolls down, It will change to a White Background
+so that the User can interact with it - Use JS ? */
+
+nav a {
+    color: #FFF;
+    margin: 2.2rem;
+    text-decoration: none;
+
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+/* Logo in Navbar */
+.logo {
+    font-weight: 400;
+    z-index: 100;
+    text-align: center;
+    /* Using Margin to move Title Logo to centre of Nav */
+    margin: 0 60px 0 0;  /* Anchors the Logo so it doesn't move */
+}
+
+
+/* Burger Menu */
+
+
+
+/* ///////////////////// HEADER //////////////// */
+
+.main-header {
+
+    height: 100vh;
+    background-image: linear-gradient(to right bottom,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.8)),
+        url(../elements/hero2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%); */ 
+}
+
+
+/* For Pages other than the Index/Home page such as Albums, Latest, SearchResults etc. */
+.alt-header {
+
+    height: 50vh;
+    background-image: linear-gradient(to right bottom,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.8)),
+        url(../elements/hero2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.alt-text-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+/*              */
+
+.text-box {
+
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.heading-primary {
+
+    color: #FFF;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 2rem;
+}
+
+.heading-primary-main {
+
+    display: block;
+    font-size: 2.3rem;
+    /* Imported via Stylesheet*/
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+
+}
+
+.heading-primary-sub {
+
+    display: block;
+    font-size: 4.9rem;
+
+    font-family: 'Amaranth', sans-serif;
+ 
+    white-space: nowrap;
+    font-weight: 200;
+    letter-spacing: 4px;
+
+}
+
+/* ////////////// Trending Albums ////////////// */
+
+/* Trending Items background */
+.trending-albums {
+background-color: #FFF;
+margin: auto;
+
+}
+
+/* Container for the Items to be flexboxed in */
+.trending-albums .row {
+    max-width: 1500px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+/* Trending Item in Row */
+.trending-item {
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.trending-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.trending-item img {
+    height: 350px;
+    width: auto;
+}
+
+.trending-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0px; 
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+.trending-item p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.trending-button {
+    display: inline-block;
+    padding: 10px 40px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: auto 10px;
+
+    text-decoration: none;
+    background-color: #333;
+    color: #FFF;
+
+}
+/* END of Trending Albums */
+
+
+/* ////////////// Albums Page ////////////// */
+
+
+
+/* ////////////// Search Bar ////////////// */
+
+.search-bar {
+    background-color: #FFF;
+    text-align: center;
+    margin: auto;
+}
+
+.search-bar form {
+    box-shadow: 5px  #333;
+}
+
+.search-bar p {
+    font-size: 1.7rem;
+}
+
+/* ////////////// Search Results ////////////// */
+
+.search-header {
+    height: 50vh;
+    background-image: linear-gradient(to right bottom,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.8)),
+        url(../elements/hero2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.search-header .heading-primary-main {
+    top: 20%!important;
+}
+
+.search-results {
+ margin-top: 30px;
+}
+
+
+/* ////////////// Instagram Showcase ////////////// */
+
+
+/* Instagram Handle */
+.instagram-box {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    width: 180px;
+    height: auto;
+     /* This Centers the Button AND Puts some space at the bottom of the box */
+    margin: auto auto 20px auto
+}
+
+.instagram-box__text {
+    color: #FEFEFE ;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.instagram-box a {
+    text-decoration: none;
+}
+
+.instagram-showcase img {
+    max-height: 310px;
+    max-width: auto;
+}
+
+.showcase__container {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Opening Hours */
+.opening-time {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.opening-text {
+    margin: auto 10px;
+}
+
+
+/* ////////////// Sell Page ////////////// */
+
+.sell-info {
+margin: auto;
+max-width: 1700px;
+}
+
+.sell-image {
+    max-height: 500px;
+    max-width: auto;
+    margin: auto;
+}
+
+.sell-item h3 {
+font-size: 1.8rem;
+}
+
+.sell-item p {
+    font-size: 1.4rem;
+    text-align: center;
+    max-width: 500px;
+    }
+
+/* ////////////// Latest Page ////////////// */
+
+.latest-intro {
+    margin-bottom: -50px;
+}
+
+.latest-intro h2 {
+    font-size: 5.5rem;
+    max-width: 300px;
+    margin: auto;
+}
+
+.latest-image {
+    height: 650px;
+    width: 100%;
+}
+
+/* USED FOR LOGIN, Register and Opening Times */
+
+.split {
+  position: relative;
+  width: 80%;
+  z-index:1;
+  padding-top: 20px;
+  }
+
+.left, .right {
+    margin: 0px 5px;
+}
+
+.opening-image {
+    max-height: 120%;
+    max-width: auto;
+    z-index: 0;
+}
+
+/* Text on Right Side */
+.opening-time h2 {
+    font-size: 2rem;
+}
+
+.opening-text {
+padding: 0;
+margin-left: 10px;
+margin: auto;
+font-size: 1.6rem;
+}
+
+
+
+/* ////////////// Logged In Options ////////////// */
+
+/* ////////////// Upload Form ////////////// */
+
+.add-record h2 {
+    text-align: left;
+    font-size: 3rem;
+}
+
+.uploadForm {
+    background-color: #FEFEFE;
+    margin: 0;
+}
+
+.uploadForm p {
+
+        font-size: 1.4rem;
+        color: #555;
+    
+}
+/* ////////////// SelectedAlbum ////////////// */
+
+.selected-album {
+    width: 1600px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.selected-album .left {
+    margin: 20px 20px 0 0;
+}
+
+.album-cover {
+    max-height: 900px;
+    width: auto;
+}
+.album-price, .album-artist {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+.album-title {
+    text-align: left;
+}
+
+.album-genre, .album-cat {
+    font-size: 1.8rem;
+}
+
+.album-text {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.album-button {
+    background-color: #29262B;
+    color: #F2F2F2;
+    border-radius: 2px;
+    margin-top: 40px;    
+}
+
+/* Reccomedations section using PHP */
+.recommend__container img {
+    height: 310px;
+    width: auto;
+}
+
+.recommend__container {
+    margin: auto;
+    display: flex;
+    width: 1400px;
+    justify-content: space-around;
+}
+
+/* ////////////// Footer ////////////// */
+
+footer {
+    background-color: #29262B;
+    color: #F2F2F2;
+}
+
+footer div {
+    margin-top: 20px;
+}
+
+footer h3 {
+    font-size: 1.7rem;
+    margin-top: 5px;
+    text-align: left;
+    color: #ccc;
+    
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a, li {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+.footer-title {
+    font-size: 2.5rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+}
+
+.footer__copyright {
+margin: auto;
+text-align: center;
+font-size: 1.7rem;
+}
+
+
+
+/* Copyright Section */
+
+
+
+/* ////////////// Login/Register ////////////// */
+
+/* Login Page */
+.login-form {
+    background-color: #FEFEFE;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.login-form h2 {
+    text-align: left;
+    font-size: 3rem;
+}
+
+/*Image for Login/Register Page */
+.login-image {
+    max-height: 800px;
+    max-width: 800px;
+} 
+
+input, select, textarea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #555;
+    color: #FFF;
+    padding: 12px 20px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #555;
+  }
+
+  .sign-up-link {
+      font-size: 1.4rem;
+      color: #555;
+  }
+
+/* LoginPage Nav */
+
+.login-options {
+    margin-top: 20px;
+}
+
+/* ////////////// Buttons ////////////// */
+
+
+.btn {
+
+    display: inline-block;
+    border-radius: 3%;
+    padding: 10px 40px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    font-family: 'Shippori Antique B1', sans-serif;
+
+    text-decoration: none;
+    color: #FFF;
+}
+
+.btn-ghost {
+    border: 1px solid #FFF;
+    color: #FFF;
+    border-radius: 2px;    
+}
+
+.btn-ghost:hover {
+    background-color: #FFF;
+    color: #333;
+    transition: 0.4s;
+}
+
+.btn-full {
+    background-color: #F2F2F2;
+    color: #000;
+}
